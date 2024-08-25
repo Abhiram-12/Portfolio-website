@@ -1,4 +1,4 @@
-# React + Vite
+# My Portfolio Website
 
 I created this website as a way to showcase my current and finished projects. It was created using JavaScript, CSS and HTML with React as a library.
 
