@@ -1,8 +1,7 @@
 .home{
-    display: flex;
-    
+    display: flex;    
     justify-content: center;
-    width: 100vw;
+    width: 98vw;
 }
 .home__container {
     row-gap: 7rem;
@@ -56,7 +55,7 @@
 }
 
 .home__img {
-    background: url(../../assets/img1.png);
+    background: url(../../assets/imageemo3copy.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

@@ -1,5 +1,6 @@
 import React from 'react'
-import AboutImg from '../../assets/img1.png'
+import AboutImg1 from '../../assets/image2.jpg'
+import AboutImg from '../../assets/imageemo2copy.jpg'
 import Resume from '../../assets/Resume_draft1.pdf'
 import Info from './Info.jsx'
 import './about.css'
@@ -17,8 +18,7 @@ const About = () => {
           
           <p className="about__description">
             Hey there! My name is Abhiram and I'm a student at National Institute of Technology Warangal, studying Chemical engineering.{"\n"}
-            {"\n"}I'm interested in technology and programming, and I hope to
-            one day become a software engineer.{"\n"}
+            {"\n"}I'm interested in technology and programming and hope to become a software engineer one day.{"\n"}
             {"\n"}I am passionate about exploring the intersection of engineering and technology, and I continually seek opportunities to enhance my skills in software development and problem-solving.
           </p>
           <a download=" " href={Resume} className="button button--flex">Resume
