@@ -1,7 +1,7 @@
 import React from 'react'
 import AboutImg1 from '../../assets/image2.jpg'
 import AboutImg from '../../assets/imageemo2copy.jpg'
-import Resume from '../../assets/Resume_draft1.pdf'
+import Resume from '../../assets/Abhiram_Resume.pdf'
 import Info from './Info.jsx'
 import './about.css'
 

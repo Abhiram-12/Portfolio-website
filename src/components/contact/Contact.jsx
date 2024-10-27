@@ -1,10 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 
 const Contact = () => {
 
   const form = useRef();
+  const [msg,setMsg]=useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -14,8 +15,24 @@ const Contact = () => {
       "template_yzpda8d",
       form.current,
       "vJYeS20I0AIyCrIvf"
-    );
-    e.target.reset();
+    ).then(() => {
+      setMsg("Message sent successfully.");
+      e.target.reset();
+  
+      // Set timeout to clear the message after 5 seconds
+      setTimeout(() => {
+        setMsg("");
+      }, 5000);
+    })
+    .catch((error) => {
+      setMsg("Failed to send message. Please try again.");
+      console.error("Email sending error:", error);
+  
+      // clear the error message after 5 seconds
+      setTimeout(() => {
+        setMsg("");
+      }, 5000);
+    });
   };
 
   return (
@@ -108,7 +125,7 @@ const Contact = () => {
                 placeholder="Enter your message"
               ></textarea>
             </div>
-
+            
             <button className="button button--flex">
               Send Message{" "}
               <svg
@@ -129,8 +146,10 @@ const Contact = () => {
                 ></path>
               </svg>
             </button>
-
+            
           </form>
+
+          
         </div>
       </div>
     </section>
